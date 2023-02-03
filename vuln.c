@@ -11,6 +11,6 @@ int main()
     printf("%s", buf);  //leak
     printf(buf);        //fsb
 
-    scanf("%d", idx);
+    scanf("%d", &idx);
     buf[idx] = 'A';     //oob;
 }
